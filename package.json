@@ -2,5 +2,10 @@
   "name": "exo-async-0",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": "https://github.com/CryptoThibault/exo-async-0.git",
+  "author": "CryptoThibault <thibault.chalaoux@gmail.com>",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
 }
