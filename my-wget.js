@@ -3,9 +3,8 @@ const fsPromises = require('fs/promises')
 
 const myWget = async () => {
   try {
-    const getStat = async () => {
-      const data = (await fsPromises.stat('axios.html')).size
-      console.log(data)
+    const getStat = async () => { 
+      console.log((await fsPromises.stat('axios.html')).size)
     }
     const response = await axios.get('https://app.netlify.com/sites/shopping-list-thibault/overview')
     fsPromises.writeFile('axios.html', response.data)
